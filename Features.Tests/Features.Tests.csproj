@@ -21,7 +21,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="1 - Traits\" />
+      <ProjectReference Include="..\Features\Features.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="3 - Order\" />
     </ItemGroup>
 
 </Project>
