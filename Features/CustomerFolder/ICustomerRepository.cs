@@ -1,6 +1,6 @@
 ﻿using Features.Core;
 
-namespace Features.Customer;
+namespace Features.CustomerFolder;
 
 public interface ICustomerRepository: IRepository<Customer>
 {

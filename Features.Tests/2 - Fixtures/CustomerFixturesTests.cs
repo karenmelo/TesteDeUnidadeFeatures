@@ -1,13 +1,15 @@
-﻿namespace Features.Tests._2___Fixtures;
+﻿using Features.CustomerFolder;
+
+namespace Features.Tests._2___Fixtures;
 
 public class CustomerFixturesTests
 {
-    public Customer.Customer ValidCustomer;
-    public Customer.Customer InvalidCustomer;
+    public Customer ValidCustomer;
+    public Customer InvalidCustomer;
 
     public CustomerFixturesTests()
     {
-        ValidCustomer = new Customer.Customer(
+        ValidCustomer = new Customer(
             Guid.NewGuid(),
             "Karen",
             "Melo",
@@ -16,7 +18,7 @@ public class CustomerFixturesTests
             true,
             DateTime.Now);
         
-        InvalidCustomer = new Customer.Customer(
+        InvalidCustomer = new Customer(
             Guid.NewGuid(),
             "",
             "",
@@ -26,8 +28,8 @@ public class CustomerFixturesTests
             DateTime.Now);
     }
     
-    [Fact(DisplayName = "New Customer Valid")]
-    [Trait("Category", "Customer Fixtures Valid")]
+    [Fact(DisplayName = "New CustomerFolder Valid")]
+    [Trait("Category", "CustomerFolder Fixtures Valid")]
     public void Customer_NewCustomer_MustBeValid()
     {
         //act
@@ -39,7 +41,7 @@ public class CustomerFixturesTests
     }
 
     [Fact(DisplayName = "New customer invalid")]
-    [Trait("Category", "Customer Fixtures Invalid")]
+    [Trait("Category", "CustomerFolder Fixtures Invalid")]
     public void Customer_NewCustomer_MustNotBeValid()
     {
         //act

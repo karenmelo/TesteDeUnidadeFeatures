@@ -1,4 +1,4 @@
-﻿namespace Features.Customer;
+﻿namespace Features.CustomerFolder;
 
 public interface ICustomerService: IDisposable
 {

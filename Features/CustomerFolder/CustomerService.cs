@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Features.Customer;
+namespace Features.CustomerFolder;
 
 public class CustomerService : ICustomerService
 {

@@ -11,7 +11,7 @@ public class CustomerInvalidTest
     }
 
     [Fact(DisplayName = "New customer invalid")]
-    [Trait("Category", "Customer Fixtures Invalid")]
+    [Trait("Category", "CustomerFolder Fixtures Invalid")]
     public void Customer_NewCustomer_MustNotBeValid()
     {
         //arrange

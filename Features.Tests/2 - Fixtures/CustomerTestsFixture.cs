@@ -1,4 +1,6 @@
-﻿namespace Features.Tests._2___Fixtures;
+﻿using Features.CustomerFolder;
+
+namespace Features.Tests._2___Fixtures;
 
 [CollectionDefinition(nameof(CustomerCollection))]
 public class CustomerCollection : ICollectionFixture<CustomerTestsFixture>
@@ -8,9 +10,9 @@ public class CustomerCollection : ICollectionFixture<CustomerTestsFixture>
 
 public class CustomerTestsFixture : IDisposable
 {
-    public Customer.Customer GenerateValidCustomer()
+    public Customer GenerateValidCustomer()
     {
-        var customer = new Customer.Customer(
+        var customer = new Customer(
             Guid.NewGuid(),
             "Karen",
             "Melo",
@@ -22,9 +24,9 @@ public class CustomerTestsFixture : IDisposable
         return customer;
     } 
     
-    public Customer.Customer GenerateInvalidCustomer()
+    public Customer GenerateInvalidCustomer()
     {
-        var customer = new Customer.Customer(
+        var customer = new Customer(
             Guid.NewGuid(),
             "",
             "",

@@ -10,8 +10,8 @@ public class CustomerValidTest
         _customerTestsFixture = customerTestsFixture;
     }
 
-    [Fact(DisplayName = "New Customer Valid")]
-    [Trait("Category", "Customer Fixtures Valid")]
+    [Fact(DisplayName = "New CustomerFolder Valid")]
+    [Trait("Category", "CustomerFolder Fixtures Valid")]
     public void Customer_NewCustomer_MustBeValid()
     {
         //arrange
