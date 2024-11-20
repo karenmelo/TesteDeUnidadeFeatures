@@ -24,8 +24,4 @@
       <ProjectReference Include="..\Features\Features.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="3 - Order\" />
-    </ItemGroup>
-
 </Project>
